@@ -4,5 +4,5 @@ from .views import *
 app_name = 'task_app'
 
 urlpatterns = [
-    path('', HomeView, name='home'),
+    path('', HomeView.as_view(), name='home'),
 ]
